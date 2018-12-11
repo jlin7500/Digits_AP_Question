@@ -19,7 +19,11 @@ public class Digits
     {
         for(int i = 0; i < digitlist.size() - 1;i++)
         {
-            if(digitlist.get(i) >= digitlist.get(i+1))
+            if(digitlist.get(i) > digitlist.get(i+1))
+            {
+                return false;
+            }
+            else if(digitlist.get(i) == digitlist.get(i +1))
             {
                 return false;
             }
